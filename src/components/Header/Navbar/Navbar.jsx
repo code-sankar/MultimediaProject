@@ -10,10 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-600 p-4 shadow-md">
+    <nav className="bg-gray-600 p-6 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white font-bold text-lg">
-          <Link to="/">Sankar</Link>
+          <Link to="/">Multimedia Image and Graphics</Link>
         </div>
 
         {/* Hamburger Menu Button for Small Screens */}
@@ -43,19 +43,19 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/about"
+              to="/blog"
               className="relative text-white hover:text-orange-600 transition duration-500 ease-in-out transform hover:scale-110"
             >
-              About
+              Blog
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-600 transition-all duration-500 ease-in-out hover:w-full"></span>
             </Link>
           </li>
           <li>
             <Link
-              to="/blog"
+              to="/about"
               className="relative text-white hover:text-orange-600 transition duration-500 ease-in-out transform hover:scale-110"
             >
-              Blog
+              About
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-600 transition-all duration-500 ease-in-out hover:w-full"></span>
             </Link>
           </li>
@@ -85,20 +85,20 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/about"
-              onClick={toggleMenu}
-              className="block hover:bg-orange-600 hover:text-white px-2 py-1 rounded transition duration-300 ease-in-out transform hover:scale-105"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
               to="/blog"
               onClick={toggleMenu}
               className="block hover:bg-orange-600 hover:text-white px-2 py-1 rounded transition duration-300 ease-in-out transform hover:scale-105"
             >
               Blog
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              onClick={toggleMenu}
+              className="block hover:bg-orange-600 hover:text-white px-2 py-1 rounded transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              About
             </Link>
           </li>
           <li>

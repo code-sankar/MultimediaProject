@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+
 import {
   Route,
   RouterProvider,
@@ -11,7 +11,6 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact"
 import Blog from "./components/Blog/Blog"
-import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
     createRoutesFromElements(
       <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />} />
-      <Route path='header' element={<Header />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='footer' element={<Footer />} />
